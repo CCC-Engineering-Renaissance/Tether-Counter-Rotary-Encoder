@@ -5,8 +5,8 @@
 
 
 
-long temp, counter = 0; //This variable will increase or decrease depending on the rotation of encoder
-const double DIAMETER = 0.2625;
+float temp, counter = 0; //This variable will increase or decrease depending on the rotation of encoder
+const double DIAMETER = 0.08; // in meters
 #define PI 3.1415926535897932384626433832795
 
 void setup() {
