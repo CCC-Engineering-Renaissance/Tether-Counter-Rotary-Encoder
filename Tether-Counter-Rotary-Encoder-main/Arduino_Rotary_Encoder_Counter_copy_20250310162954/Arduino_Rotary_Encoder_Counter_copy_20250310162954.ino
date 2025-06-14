@@ -13,7 +13,7 @@ void setup() {
   
   pinMode(2, INPUT_PULLUP); // internal pullup input pin 2 
   
-  pinMode(3, INPUT_PULLUP); // internal pullup input pin 3
+  pinMode(4, INPUT_PULLUP); // internal pullup input pin 4
    
    //Setting up interrupt
   //A rising pulse from Rotary Encoder activated forward(). AttachInterrupt 0 is DigitalPin 2 on most Arduino.
@@ -40,9 +40,9 @@ void loop() {
 void forward() {
 
   // forward is activated if DigitalPin nr 2 is going from LOW to HIGH
-  // Check pin 3 to determine the direction
+  // Check pin 4 to determine the direction
   
-  if(digitalRead(3)==LOW){
+  if(digitalRead(4)==LOW){
     counter++;
   }
   else{
